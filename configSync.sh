@@ -74,6 +74,7 @@ makeUpdate(){
 			rsync -a $REPLY ${targetDir}${item:10}/
 		fi
 	done < $mySave
+	echo "fin"
 	cd $targetDir
 	git add .
 	git commit -m "autosync commit"
