@@ -22,8 +22,8 @@ do_sed() {
 do_check(){
 	while read -r; do
 		if [[ $REPLY =~ $item_re ]]; then
-			item=${BASH_REMATCH[1]}
-			# echo "$item"
+			# item=${BASH_REMATCH[1]}
+			echo "$item"
 		else
 			# echo "$item"
 			# echo "${REPLY:10}"
