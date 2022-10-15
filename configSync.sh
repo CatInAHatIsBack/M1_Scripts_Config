@@ -59,6 +59,7 @@ makeUpdate(){
 		# echo $item
 		if [[ $REPLY =~ $item_re ]]; then
 			item=${BASH_REMATCH[1]}
+			echo $item
 			# echo "hello"
 		else
 			# from $REPLY abs path
