@@ -22,8 +22,8 @@ do_sed() {
 do_check(){
 	while read -r; do
 		if [[ $REPLY =~ $item_re ]]; then
-			# item=${BASH_REMATCH[1]}
-			echo "$item"
+			item=${BASH_REMATCH[1]}
+			# echo "$item"
 		else
 			# echo "$item"
 			# echo "${REPLY:10}"
@@ -58,7 +58,8 @@ makeUpdate(){
 	while read -r; do
 		# echo $item
 		if [[ $REPLY =~ $item_re ]]; then
-			item=${BASH_REMATCH[1]}
+			# item=${BASH_REMATCH[1]}
+			echo "hello"
 		else
 			# from $REPLY abs path
 			# printf "from: %s\n" "${REPLY}"
