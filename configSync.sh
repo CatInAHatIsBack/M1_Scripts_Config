@@ -6,7 +6,7 @@ item_re="^(Directory .*):$"
 targetDir=$( cat $PWD/dir.txt | xargs )
 echo targetDir
 mySave=$targetDir/file.txt
-echo mySave
+echo $mySave
   
 
 currDir=$(pwd)
