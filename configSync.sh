@@ -61,11 +61,11 @@ makeUpdate(){
 			item=${BASH_REMATCH[1]}
 		else
 			# from $REPLY abs path
-			printf "from: %s\n" "${REPLY}"
+			# printf "from: %s\n" "${REPLY}"
 				
 			# to targetDir + name
-			printf "to: ${targetDir}%s\n" "${item:10}"
-			printf "\n"
+			# printf "to: ${targetDir}%s\n" "${item:10}"
+			# printf "\n"
 
 			# rsync -a /$currDir/${file} $targetDir/${name}
 			#			from				to 
