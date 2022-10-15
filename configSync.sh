@@ -71,7 +71,7 @@ makeUpdate(){
 			# rsync -a /$currDir/${file} $targetDir/${name}
 			#			from				to 
 			# echo $REPLY
-			rsync -a $REPLY ${targetDir}${item:10}/
+			rsync -a $REPLY ${targetDir}/${item:10}/
 		fi
 	done < $mySave
 	echo "fin"
