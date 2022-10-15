@@ -1,0 +1,4 @@
+Directory Configs:
+/Users/cat/.config/nvim
+/Users/cat/.config/alacritty/
+

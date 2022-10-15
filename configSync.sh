@@ -1,9 +1,14 @@
 item_re="^(Directory .*):$"
 
-targetDir=~/Desktop/code/M1_Scripts_Config
+
+# targetDir=~/Desktop/code/M1_Scripts_Config
+# targetDir= cat $PWD/dir.txt
+targetDir=$( cat $PWD/dir.txt | xargs )
+mySave=$targetDir/file.txt
+  
 
 currDir=$(pwd)
-mySave=~/Desktop/code/M1_Scripts_Config/file.txt
+mySave=$targetDir/file.txt
 prefix="Directory"
 
 
