@@ -3,10 +3,15 @@ item_re="^(Directory .*):$"
 
 # targetDir=~/Desktop/code/M1_Scripts_Config
 # targetDir= cat $PWD/dir.txt
-targetDir=$( cat $PWD/dir.txt | xargs )
-echo targetDir
+# targetDir=$( cat $PWD/dir.txt | xargs )
+
+# need to get current directory 
+targetDir=$( cat ~/Desktop/code/M1_Scripts_Config/dir.txt | xargs )
+# echo $targetDir
+
+
 mySave=$targetDir/file.txt
-echo $mySave
+# echo $mySave
   
 
 currDir=$(pwd)
@@ -48,7 +53,7 @@ make_dir(){
 
 printer(){
 	# echo "sd" >> $mySave
-	echo "-f specify file. must me used before i"
+	echo "-f specify file. must be used before -i if specifying file or folder"
 	echo "-i insert below dir"
 	echo "-d make new dir "
 	echo "-u update"
@@ -74,11 +79,11 @@ makeUpdate(){
 			rsync -a $REPLY ${targetDir}/${item:10}/
 		fi
 	done < $mySave
-	echo "fin"
 	cd $targetDir
 	git add .
 	git commit -m "autosync commit"
 	git push
+	echo "fin"
 }
 while getopts ":f:i:d:hu" aflag; do 
 	case ${aflag} in 
@@ -89,5 +94,5 @@ while getopts ":f:i:d:hu" aflag; do
 		u) makeUpdate;; 
 	esac
 done
-echo "file path $currDir/${file}"
+# echo "file path $currDir/${file}"
 

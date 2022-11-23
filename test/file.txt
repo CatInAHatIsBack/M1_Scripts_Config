@@ -1,6 +1,0 @@
-Directory configs:
-/Users/cat/.config/alacritty/
-
-Directory test:
-/Users/cat/Desktop/code/M1_Scripts_Config/file.txt
-

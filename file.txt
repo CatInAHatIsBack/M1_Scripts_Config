@@ -1,6 +1,6 @@
-Directory configs:
-/Users/cat/.config/alacritty/
-
-Directory test:
-/Users/cat/Desktop/code/M1_Scripts_Config/file.txt
+Directory config:
+/Users/cat/.config/htop/htoprc
+/Users/cat/.config/nvim
+/Users/cat/.config/alacritty
+/Users/cat/.zshrc
 
