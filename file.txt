@@ -1,5 +1,5 @@
 Directory config:
-/Users/cat/.config/htop/htoprc
+/Users/cat/.config/htop
 /Users/cat/.config/nvim
 /Users/cat/.config/alacritty
 /Users/cat/.zshrc
